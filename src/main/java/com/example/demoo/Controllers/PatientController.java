@@ -1,4 +1,4 @@
-/*package com.example.demoo.Controllers;
+package com.example.demoo.Controllers;
 
 import com.example.demoo.Entities.Patient;
 import com.example.demoo.Repositories.PatientRepository;
@@ -35,4 +35,3 @@ public class PatientController {
 
     }}
 
-*/

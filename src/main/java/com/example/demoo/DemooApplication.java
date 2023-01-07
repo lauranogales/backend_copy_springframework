@@ -1,18 +1,19 @@
 package com.example.demoo;
-
 import com.example.demoo.Entities.Doctor;
 import com.example.demoo.Entities.Patient;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 
-//@ServletComponentScan
+@ServletComponentScan
 @SpringBootApplication
+@EntityScan({"com.example.demoo.Entities.Patient", "com.example.demoo.Entities.Doctor"})
 public class DemooApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
